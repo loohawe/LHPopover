@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LHPopover'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LHPopover.'
+  s.summary          = 'A Popover which can add custom view.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,22 +18,23 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A Popover which can add custom view.
+一个可以添加自定义 View 的 Popover View
                        DESC
 
-  s.homepage         = 'https://github.com/loohawe@gmail.com/LHPopover'
+  s.homepage         = 'https://github.com/loohawe/LHPopover'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'loohawe@gmail.com' => 'luhao@mogoroom.com' }
-  s.source           = { :git => 'https://github.com/loohawe@gmail.com/LHPopover.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/loohawe/LHPopover', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LHPopover/Classes/**/*'
+  s.source_files = 'LHPopover/**/*.{swift,h,m}'
   
   # s.resource_bundles = {
-  #   'LHPopover' => ['LHPopover/Assets/*.png']
+  #   'LHPopover' => ['LHPopover/**/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
