@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LHPopover_Example' do
+  pod 'LHPopover', :path => '../'
+
+  target 'LHPopover_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
