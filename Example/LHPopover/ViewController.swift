@@ -30,7 +30,8 @@ class ViewController: UIViewController {
     @IBAction func expand(_ sender: UIButton) {
         //展开
         let popOver = Popover(options: [.animationType(.expand),
-                                        .dismissOnBlackOverlayTap(true)])
+                                        .dismissOnBlackOverlayTap(true),
+                                        .strokeColor(UIColor.red)])
         let contentView = UIView(frame: CGRect(x: 10,
                                                y: 0,
                                                width: UIScreen.main.bounds.width - 20,

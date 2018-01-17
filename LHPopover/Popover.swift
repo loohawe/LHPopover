@@ -27,7 +27,7 @@ public enum PopoverOption {
     /// 动画类型
     case animationType(AnimationType)
     
-    /// 内容颜色
+    /// 填充颜色
     case color(UIColor)
     
     /// 边框颜色
@@ -232,6 +232,7 @@ open class Popover: UIView {
         super.draw(rect)
         let arrow = UIBezierPath()
         let color = self.popoverColor
+        self.strokeColor.set() //设置画笔颜色
         let arrowPoint = self.containerView.convert(self.arrowShowPoint, to: self)
         switch self.popoverType {
         case .up:
@@ -351,7 +352,10 @@ open class Popover: UIView {
                 x: arrowPoint.x - self.arrowSize.width * 0.5,
                 y: self.isCornerLeftArrow ? self.arrowSize.height + self.bounds.height : self.arrowSize.height))
         }
+        arrow.close() //封口
+        arrow.stroke() //边框
         
+        //填充
         color.setFill()
         arrow.fill()
     }
