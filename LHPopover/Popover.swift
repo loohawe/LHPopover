@@ -120,6 +120,7 @@ open class Popover: UIView {
             ()
         case .down:
             self.contentView.frame.origin.y = arrowSize.height
+            self.contentView.frame.size.height = self.bounds.height - arrowSize.height
         }
     }
     
