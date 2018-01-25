@@ -427,10 +427,14 @@ private extension Popover {
         switch self.popoverType {
         case .up:
             frame.origin.y = self.arrowShowPoint.y - frame.height - self.arrowSize.height
-            anchorPoint = CGPoint(x: arrowPoint.x / frame.size.width, y: 1)
+            if frame.size.width != 0 {
+                anchorPoint = CGPoint(x: arrowPoint.x / frame.size.width, y: 1)
+            }
         case .down:
             frame.origin.y = self.arrowShowPoint.y
-            anchorPoint = CGPoint(x: arrowPoint.x / frame.size.width, y: 0)
+            if frame.size.width != 0 {
+                anchorPoint = CGPoint(x: arrowPoint.x / frame.size.width, y: 0)
+            }
         }
         
         if self.arrowSize == .zero {
