@@ -423,7 +423,7 @@ private extension Popover {
         self.frame = frame
         
         let arrowPoint = self.containerView.convert(self.arrowShowPoint, to: self)
-        var anchorPoint: CGPoint
+        var anchorPoint: CGPoint = CGPoint(x: 0.0, y: 0.0)
         switch self.popoverType {
         case .up:
             frame.origin.y = self.arrowShowPoint.y - frame.height - self.arrowSize.height

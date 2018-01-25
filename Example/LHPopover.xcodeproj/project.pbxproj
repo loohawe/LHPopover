@@ -41,12 +41,12 @@
 		607FACE51AFB9204008FA782 /* LHPopover_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHPopover_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		9CFEA1D8AD790286C1094A8A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A55A67A7A880C194313E3365 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9CFEA1D8AD790286C1094A8A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A55A67A7A880C194313E3365 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AA0C5533FAA6E2DD80477727 /* Pods_LHPopover_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LHPopover_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB271125041B297B3C141AD8 /* Pods_LHPopover_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LHPopover_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0B436719B408B3551A382C /* Pods-LHPopover_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHPopover_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LHPopover_Example/Pods-LHPopover_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E0F02CF6A0268C01319CE9C0 /* LHPopover.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LHPopover.podspec; path = ../LHPopover.podspec; sourceTree = "<group>"; };
+		E0F02CF6A0268C01319CE9C0 /* LHPopover.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LHPopover.podspec; path = ../LHPopover.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 467A2QNXBM;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 467A2QNXBM;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -517,6 +519,7 @@
 			baseConfigurationReference = CE0B436719B408B3551A382C /* Pods-LHPopover_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 467A2QNXBM;
 				INFOPLIST_FILE = LHPopover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -532,6 +535,7 @@
 			baseConfigurationReference = 1830CF4457C0C226D3FC97A8 /* Pods-LHPopover_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 467A2QNXBM;
 				INFOPLIST_FILE = LHPopover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -546,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 51344C6130C00580E616D2A1 /* Pods-LHPopover_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 467A2QNXBM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -560,6 +565,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LHPopover_Example.app/LHPopover_Example";
 			};
 			name = Debug;
 		};
@@ -567,6 +573,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 54E5978EDD2D83E87DF3DC53 /* Pods-LHPopover_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 467A2QNXBM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -577,6 +584,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LHPopover_Example.app/LHPopover_Example";
 			};
 			name = Release;
 		};
