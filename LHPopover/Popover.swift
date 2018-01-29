@@ -327,7 +327,7 @@ open class Popover: UIView {
                 endAngle: self.radians(90),
                 clockwise: true)
             
-            arrow.addLine(to: CGPoint(x: 0, y: self.bounds.height))
+            arrow.addLine(to: CGPoint(x: self.cornerRadius, y: self.bounds.height))
             arrow.addArc(
                 withCenter: CGPoint(
                     x: self.cornerRadius,
@@ -353,12 +353,13 @@ open class Popover: UIView {
                 x: arrowPoint.x - self.arrowSize.width * 0.5,
                 y: self.isCornerLeftArrow ? self.arrowSize.height + self.bounds.height : self.arrowSize.height))
         }
-        arrow.close() //封口
-        arrow.stroke() //边框
-        
         //填充
         color.setFill()
         arrow.fill()
+        
+        //边框
+        arrow.close() //封口
+        arrow.stroke()
     }
 }
 
