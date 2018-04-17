@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LHPopover'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A Popover which can add custom view.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ A Popover which can add custom view.
   s.homepage         = 'https://github.com/loohawe/LHPopover'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'loohawe@gmail.com' => 'luhao@mogoroom.com' }
+  s.author           = { 'loohawe@gmail.com' => 'loohawe@gmail.com' }
   s.source           = { :git => 'https://github.com/loohawe/LHPopover', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
