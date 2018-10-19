@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LHPopover'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A Popover which can add custom view.'
 
 # This description is used to generate tags and improve search results.
