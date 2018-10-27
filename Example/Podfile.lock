@@ -1,16 +1,16 @@
 PODS:
-  - LHPopover (0.1.0)
+  - LHPopover (0.1.3)
 
 DEPENDENCIES:
   - LHPopover (from `../`)
 
 EXTERNAL SOURCES:
   LHPopover:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  LHPopover: 6eab345848ee551a73a2335ef032f122893df2ff
+  LHPopover: 7e3b804d1b58fa96dd97abde47bce03d8c02b7d3
 
 PODFILE CHECKSUM: 517dfdc7b60e3bfca36d9d9f73b442c1799ea3e9
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
